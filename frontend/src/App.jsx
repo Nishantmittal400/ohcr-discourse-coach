@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Dashboard from "./Dashboard";
 
-const API_BASE = "http://localhost:8000/api";
+const API_BASE = "https://ohcr-backend.onrender.com/api";
+
 
 export default function App() {
   const [file, setFile] = useState(null);
