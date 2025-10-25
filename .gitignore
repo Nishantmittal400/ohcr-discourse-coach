@@ -46,6 +46,10 @@ node_modules/
 frontend/dist/
 dist/
 
+# Runtime artifacts
+backend/uploads/
+backend/results/
+
 # Log files
 npm-debug.log*
 yarn-debug.log*
