@@ -1,0 +1,39 @@
+{
+  "metrics": {
+    "ohcr_index": 0.32,
+    "avg_hc_depth": 0.25,
+    "max_hc_depth": 1,
+    "student_talk_pct": 0.04,
+    "level5_pct": 0.0,
+    "kc_score": 0.111
+  },
+  "feedback": [
+    {
+      "title": "Encourage Deeper Concept Linking",
+      "why": "Knowledge construction score is low, meaning teacher and student dialogue didn\u2019t go deep enough.",
+      "how": [
+        "Prompt students with open-ended \u2018why\u2019 or \u2018how\u2019 questions.",
+        "Ask follow-ups that connect current discussion to prior knowledge.",
+        "Encourage peer-to-peer questioning."
+      ]
+    },
+    {
+      "title": "Increase Student Talk Ratio",
+      "why": "Students spoke less than 25% of the total discourse.",
+      "how": [
+        "Include student-led reflection rounds.",
+        "Ask for multiple viewpoints before summarizing yourself.",
+        "Give students short prompts to summarize what was discussed."
+      ]
+    },
+    {
+      "title": "Promote Level-5 Discourse",
+      "why": "Very few moments reached evaluative or reflective discourse (Level 5).",
+      "how": [
+        "Ask learners to critique an idea or offer alternative perspectives.",
+        "Use metacognitive questions like \u2018What led you to that conclusion?\u2019",
+        "Encourage summarizing and contrasting multiple solutions."
+      ]
+    }
+  ]
+}

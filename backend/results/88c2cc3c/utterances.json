@@ -1,0 +1,252 @@
+[
+  {
+    "t_start": 0.0,
+    "t_end": 4.5600000000000005,
+    "text": "This is all of linear algebra in a nutshell. Vectors and linear combinations.",
+    "u_id": 0,
+    "duration": 4.5600000000000005,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 5.92,
+    "t_end": 86.96000000000001,
+    "text": "A vector is an ordered list of numbers. You can think of it as a point in space or as an arrow starting at the origin and pointing somewhere. You can add vectors and scale them. When you do both, you create what's called a linear combination. Now, take two vectors in R2. If they're not pointing in the same direction, their combinations can reach every point on the 2D plane. In R3, three vectors that don't all lie on the same plane can reach all of 3D space. This idea is called span, which tells you what portion of space a set of vectors can cover using only their combinations. Matrices. Now, suppose you have a system of linear equations, something like three equations with three unknowns. Instead of writing each one out line by line, we can organize everything into a matrix equation. In a matrix, each row represents an equation, and each column lines up with a variable like x, y, or z. So, if A is the matrix of coefficients,",
+    "u_id": 1,
+    "duration": 81.04,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "H"
+  },
+  {
+    "t_start": 87.84,
+    "t_end": 95.76,
+    "text": "x is the vector of unknowns, and B is the vector of outputs, the system becomes Ax equal B.",
+    "u_id": 2,
+    "duration": 7.920000000000002,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 97.2,
+    "t_end": 107.52,
+    "text": "This equation means multiply matrix A by vector x to get vector B. Here, A acts like a transformation.",
+    "u_id": 3,
+    "duration": 10.319999999999993,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 108.4,
+    "t_end": 140.32,
+    "text": "It takes an input vector x and maps it to a new vector B. The goal is to figure out which x makes that mapping true. This setup turns solving equations into solving for a vector, and it's the starting point for everything else in linear algebra. Row reduction and solutions. To solve our equation Ax equal B, we use row operations to simplify the matrix into a cleaner form.",
+    "u_id": 4,
+    "duration": 31.919999999999987,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "R"
+  },
+  {
+    "t_start": 141.84,
+    "t_end": 149.2,
+    "text": "Row operations are just simple moves like swapping rows, scaling a row, or adding one row to another.",
+    "u_id": 5,
+    "duration": 7.359999999999985,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 150.16,
+    "t_end": 162.56,
+    "text": "This process is called Gaussian elimination, and if we go all the way, we reach reduced row echelon form, a version of the matrix that's as simple and readable as possible.",
+    "u_id": 6,
+    "duration": 12.400000000000006,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "H"
+  },
+  {
+    "t_start": 164.24,
+    "t_end": 177.36,
+    "text": "As we simplify our matrix, we look for pivot positions. These are the first non-zero entries in each row after elimination. Depending on what we find, there are three possibilities.",
+    "u_id": 7,
+    "duration": 13.120000000000005,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 178.48,
+    "t_end": 233.52,
+    "text": "First, if every variable has a leading one in its column, and there are no contradictions, we get a unique solution. Second, if there are fewer pivot positions than variables, meaning some variables can take on any value, we get infinitely many solutions. Lastly, if a row simplifies to something like 0 0 0 1, which means 0 equal 1, the system has no solution, because that is a contradiction. Independence, basis, and dimension. A set of vectors is linearly independent if none of them can be written as a linear combination of the others. This matters because in any space, you want the smallest possible set of vectors that still spans the entire space.",
+    "u_id": 8,
+    "duration": 55.04000000000002,
+    "disc_act": "statement",
+    "role": "student",
+    "ohcr": "H"
+  },
+  {
+    "t_start": 234.32000000000002,
+    "t_end": 243.76000000000002,
+    "text": "That minimal independent set is called a basis. In R2, a basis is any two non-parallel vectors.",
+    "u_id": 9,
+    "duration": 9.439999999999998,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 245.12,
+    "t_end": 255.92,
+    "text": "In R3, it's any three vectors that don't lie in the same plane. The number of vectors in a basis equals the dimension of the space.",
+    "u_id": 10,
+    "duration": 10.799999999999983,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 258.8,
+    "t_end": 267.76,
+    "text": "Linear transformations. A matrix doesn't just solve equations, it also defines a linear transformation.",
+    "u_id": 11,
+    "duration": 8.95999999999998,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "R"
+  },
+  {
+    "t_start": 269.2,
+    "t_end": 285.12,
+    "text": "It maps vectors from one space to another in a way that preserves two things, vector addition and scalar multiplication. That means if you know how the matrix transforms the basis vectors,",
+    "u_id": 12,
+    "duration": 15.920000000000016,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 286.0,
+    "t_end": 289.76,
+    "text": "you essentially know how it transforms the entire space.",
+    "u_id": 13,
+    "duration": 3.759999999999991,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 291.92,
+    "t_end": 311.28,
+    "text": "Linear transformations can stretch, rotate, reflect, or flatten space, and we study them to understand how systems behave. Determinants and inverses. The determinant of a square matrix tells you whether a transformation preserves volume,",
+    "u_id": 14,
+    "duration": 19.359999999999957,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 311.91999999999996,
+    "t_end": 319.03999999999996,
+    "text": "reverses orientation, or collapses space entirely. If the determinant is zero,",
+    "u_id": 15,
+    "duration": 7.1200000000000045,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 319.76,
+    "t_end": 325.84,
+    "text": "the transformation squashes space into a lower dimension, and the matrix has no inverse.",
+    "u_id": 16,
+    "duration": 6.079999999999984,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 327.35999999999996,
+    "t_end": 334.08,
+    "text": "If the determinant is non-zero, you can reverse the transformation using an inverse matrix.",
+    "u_id": 17,
+    "duration": 6.720000000000027,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 336.32,
+    "t_end": 344.88,
+    "text": "That means that you can solve AX equal B by doing X is equal to A inverse B.",
+    "u_id": 18,
+    "duration": 8.560000000000002,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "R"
+  },
+  {
+    "t_start": 346.71999999999997,
+    "t_end": 352.32,
+    "text": "Inversion only works when the transformation keeps the full dimensionality intact.",
+    "u_id": 19,
+    "duration": 5.600000000000023,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 354.96,
+    "t_end": 371.36,
+    "text": "Eigenvectors and eigenvalues. Some vectors, when transformed by a matrix, don't change direction, they just get scaled. These are called eigenvectors, and the amount they're scaled by, that's the eigenvalue.",
+    "u_id": 20,
+    "duration": 16.400000000000034,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "R"
+  },
+  {
+    "t_start": 373.28000000000003,
+    "t_end": 378.88000000000005,
+    "text": "Eigenvectors and eigenvalues tell us the invariant directions of a transformation,",
+    "u_id": 21,
+    "duration": 5.600000000000023,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 380.0,
+    "t_end": 384.48,
+    "text": "that is, the directions that stay aligned even as their magnitude changes.",
+    "u_id": 22,
+    "duration": 4.480000000000018,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 385.76000000000005,
+    "t_end": 396.32,
+    "text": "This is a powerful idea. It appears in fields like stability analysis, facial recognition, and even principal component analysis in data science.",
+    "u_id": 23,
+    "duration": 10.559999999999945,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "?"
+  },
+  {
+    "t_start": 399.76,
+    "t_end": 410.0,
+    "text": "And that's it. Again, some details were left out, but if you thought you could master linear algebra in this short video, then you're absolutely nuts.",
+    "u_id": 24,
+    "duration": 10.240000000000009,
+    "disc_act": "statement",
+    "role": "teacher",
+    "ohcr": "O"
+  }
+]

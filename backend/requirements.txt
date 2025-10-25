@@ -1,0 +1,6 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+openai-whisper @ git+https://github.com/openai/whisper.git
+torch           # CPU wheel will be installed automatically (internet required)
+numpy
+pydantic

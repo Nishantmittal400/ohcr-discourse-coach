@@ -1,0 +1,267 @@
+[
+  {
+    "start": 0.0,
+    "end": 4.5600000000000005,
+    "text": "This is all of linear algebra in a nutshell. Vectors and linear combinations."
+  },
+  {
+    "start": 5.92,
+    "end": 13.120000000000001,
+    "text": "A vector is an ordered list of numbers. You can think of it as a point in space or as an arrow"
+  },
+  {
+    "start": 13.120000000000001,
+    "end": 21.36,
+    "text": "starting at the origin and pointing somewhere. You can add vectors and scale them. When you do both,"
+  },
+  {
+    "start": 21.36,
+    "end": 27.76,
+    "text": "you create what's called a linear combination. Now, take two vectors in R2."
+  },
+  {
+    "start": 27.76,
+    "end": 34.400000000000006,
+    "text": "If they're not pointing in the same direction, their combinations can reach every point on the"
+  },
+  {
+    "start": 34.400000000000006,
+    "end": 43.36,
+    "text": "2D plane. In R3, three vectors that don't all lie on the same plane can reach all of 3D space."
+  },
+  {
+    "start": 43.36,
+    "end": 52.08,
+    "text": "This idea is called span, which tells you what portion of space a set of vectors can cover using"
+  },
+  {
+    "start": 52.08,
+    "end": 62.72,
+    "text": "only their combinations. Matrices. Now, suppose you have a system of linear equations, something like"
+  },
+  {
+    "start": 62.72,
+    "end": 69.84,
+    "text": "three equations with three unknowns. Instead of writing each one out line by line, we can organize"
+  },
+  {
+    "start": 69.84,
+    "end": 78.0,
+    "text": "everything into a matrix equation. In a matrix, each row represents an equation, and each column"
+  },
+  {
+    "start": 78.0,
+    "end": 86.96000000000001,
+    "text": "lines up with a variable like x, y, or z. So, if A is the matrix of coefficients,"
+  },
+  {
+    "start": 87.84,
+    "end": 95.76,
+    "text": "x is the vector of unknowns, and B is the vector of outputs, the system becomes Ax equal B."
+  },
+  {
+    "start": 97.2,
+    "end": 107.52,
+    "text": "This equation means multiply matrix A by vector x to get vector B. Here, A acts like a transformation."
+  },
+  {
+    "start": 108.4,
+    "end": 118.24,
+    "text": "It takes an input vector x and maps it to a new vector B. The goal is to figure out which x makes"
+  },
+  {
+    "start": 118.24,
+    "end": 126.32,
+    "text": "that mapping true. This setup turns solving equations into solving for a vector, and it's the starting"
+  },
+  {
+    "start": 126.32,
+    "end": 134.88,
+    "text": "point for everything else in linear algebra. Row reduction and solutions. To solve our equation"
+  },
+  {
+    "start": 134.88,
+    "end": 140.32,
+    "text": "Ax equal B, we use row operations to simplify the matrix into a cleaner form."
+  },
+  {
+    "start": 141.84,
+    "end": 149.2,
+    "text": "Row operations are just simple moves like swapping rows, scaling a row, or adding one row to another."
+  },
+  {
+    "start": 150.16,
+    "end": 157.44,
+    "text": "This process is called Gaussian elimination, and if we go all the way, we reach reduced row echelon"
+  },
+  {
+    "start": 157.44,
+    "end": 162.56,
+    "text": "form, a version of the matrix that's as simple and readable as possible."
+  },
+  {
+    "start": 164.24,
+    "end": 171.35999999999999,
+    "text": "As we simplify our matrix, we look for pivot positions. These are the first non-zero entries"
+  },
+  {
+    "start": 171.35999999999999,
+    "end": 177.36,
+    "text": "in each row after elimination. Depending on what we find, there are three possibilities."
+  },
+  {
+    "start": 178.48,
+    "end": 185.2,
+    "text": "First, if every variable has a leading one in its column, and there are no contradictions,"
+  },
+  {
+    "start": 185.28,
+    "end": 192.48,
+    "text": "we get a unique solution. Second, if there are fewer pivot positions than variables,"
+  },
+  {
+    "start": 193.04,
+    "end": 201.28,
+    "text": "meaning some variables can take on any value, we get infinitely many solutions. Lastly, if a row"
+  },
+  {
+    "start": 201.28,
+    "end": 210.72,
+    "text": "simplifies to something like 0 0 0 1, which means 0 equal 1, the system has no solution, because that"
+  },
+  {
+    "start": 210.72,
+    "end": 220.64,
+    "text": "is a contradiction. Independence, basis, and dimension. A set of vectors is linearly independent"
+  },
+  {
+    "start": 220.64,
+    "end": 227.28,
+    "text": "if none of them can be written as a linear combination of the others. This matters because"
+  },
+  {
+    "start": 227.28,
+    "end": 233.52,
+    "text": "in any space, you want the smallest possible set of vectors that still spans the entire space."
+  },
+  {
+    "start": 234.32000000000002,
+    "end": 243.76000000000002,
+    "text": "That minimal independent set is called a basis. In R2, a basis is any two non-parallel vectors."
+  },
+  {
+    "start": 245.12,
+    "end": 252.72,
+    "text": "In R3, it's any three vectors that don't lie in the same plane. The number of vectors in a basis"
+  },
+  {
+    "start": 252.8,
+    "end": 255.92,
+    "text": "equals the dimension of the space."
+  },
+  {
+    "start": 258.8,
+    "end": 267.76,
+    "text": "Linear transformations. A matrix doesn't just solve equations, it also defines a linear transformation."
+  },
+  {
+    "start": 269.2,
+    "end": 277.12,
+    "text": "It maps vectors from one space to another in a way that preserves two things, vector addition"
+  },
+  {
+    "start": 277.12,
+    "end": 285.12,
+    "text": "and scalar multiplication. That means if you know how the matrix transforms the basis vectors,"
+  },
+  {
+    "start": 286.0,
+    "end": 289.76,
+    "text": "you essentially know how it transforms the entire space."
+  },
+  {
+    "start": 291.92,
+    "end": 298.96,
+    "text": "Linear transformations can stretch, rotate, reflect, or flatten space, and we study them"
+  },
+  {
+    "start": 298.96,
+    "end": 305.52,
+    "text": "to understand how systems behave. Determinants and inverses."
+  },
+  {
+    "start": 305.76,
+    "end": 311.28,
+    "text": "The determinant of a square matrix tells you whether a transformation preserves volume,"
+  },
+  {
+    "start": 311.91999999999996,
+    "end": 319.03999999999996,
+    "text": "reverses orientation, or collapses space entirely. If the determinant is zero,"
+  },
+  {
+    "start": 319.76,
+    "end": 325.84,
+    "text": "the transformation squashes space into a lower dimension, and the matrix has no inverse."
+  },
+  {
+    "start": 327.35999999999996,
+    "end": 334.08,
+    "text": "If the determinant is non-zero, you can reverse the transformation using an inverse matrix."
+  },
+  {
+    "start": 336.32,
+    "end": 344.88,
+    "text": "That means that you can solve AX equal B by doing X is equal to A inverse B."
+  },
+  {
+    "start": 346.71999999999997,
+    "end": 352.32,
+    "text": "Inversion only works when the transformation keeps the full dimensionality intact."
+  },
+  {
+    "start": 354.96,
+    "end": 362.71999999999997,
+    "text": "Eigenvectors and eigenvalues. Some vectors, when transformed by a matrix, don't change direction,"
+  },
+  {
+    "start": 363.28000000000003,
+    "end": 369.92,
+    "text": "they just get scaled. These are called eigenvectors, and the amount they're scaled by,"
+  },
+  {
+    "start": 369.92,
+    "end": 371.36,
+    "text": "that's the eigenvalue."
+  },
+  {
+    "start": 373.28000000000003,
+    "end": 378.88000000000005,
+    "text": "Eigenvectors and eigenvalues tell us the invariant directions of a transformation,"
+  },
+  {
+    "start": 380.0,
+    "end": 384.48,
+    "text": "that is, the directions that stay aligned even as their magnitude changes."
+  },
+  {
+    "start": 385.76000000000005,
+    "end": 392.64000000000004,
+    "text": "This is a powerful idea. It appears in fields like stability analysis, facial recognition,"
+  },
+  {
+    "start": 392.71999999999997,
+    "end": 396.32,
+    "text": "and even principal component analysis in data science."
+  },
+  {
+    "start": 399.76,
+    "end": 405.84,
+    "text": "And that's it. Again, some details were left out, but if you thought you could master linear"
+  },
+  {
+    "start": 405.84,
+    "end": 410.0,
+    "text": "algebra in this short video, then you're absolutely nuts."
+  }
+]
